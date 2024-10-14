@@ -1,0 +1,40 @@
+package com.jwt.example.entity;
+
+public class User {
+	
+	private String userId;
+	private String name;
+	private String email;
+	public String getUserId() {
+		return userId;
+	}
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", name=" + name + ", email=" + email + "]";
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public User(String userId, String name, String email) {
+		super();
+		this.userId = userId;
+		this.name = name;
+		this.email = email;
+	}
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+}
